@@ -1,3 +1,4 @@
+const a = 32;
 const uuid = require('uuid/v1');
 const Camera = require('../models/Camera');
 
