@@ -1,5 +1,6 @@
 const http = require('http');
 const app = require('./app');
+const fs = require("fs");
 
 const normalizePort = val => {
   const port = parseInt(val, 10);
@@ -42,4 +43,21 @@ server.on('listening', () => {
   console.log('Listening on ' + bind);
 });
 
+app.get("/index.html", (req, res) => {
+  res.sendFile( __dirname + "/index.html")
+})
+
+app.get("/produit.html", (req, res) => {
+  res.sendFile( __dirname + "/produit.html")
+})
+
+app.get("/panier.html", (req, res) => {
+  res.sendFile( __dirname + "/panier.html")
+})
+
+app.get("/commande.html", (req, res) => {
+  res.sendFile( __dirname + "/commande.html")
+})
+
 server.listen(port);
+
