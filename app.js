@@ -16,15 +16,14 @@ app.use((req, res, next) => {
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use(express.static('images'));
-
+app.use('/css', express.static(path.join(__dirname, 'css')));
+app.use(express.static('css'))
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 app.use('/api/cameras', cameraRoutes);
 app.use('/api/teddies', teddyRoutes);
 app.use('/api/furniture', furnitureRoutes);
-
-module.exports = app;
 
 app.get("/index.html", (req, res) => {
   res.sendFile( __dirname + "/index.html")
@@ -41,3 +40,7 @@ app.get("/panier.html", (req, res) => {
 app.get("/commande.html", (req, res) => {
   res.sendFile( __dirname + "/commande.html")
 })
+
+
+
+module.exports = app;
