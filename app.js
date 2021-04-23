@@ -25,7 +25,7 @@ app.use('/api/cameras', cameraRoutes);
 app.use('/api/teddies', teddyRoutes);
 app.use('/api/furniture', furnitureRoutes);
 
-app.get("/index.html", (req, res) => {
+/*app.get("/index.html", (req, res) => {
   res.sendFile( __dirname + "/index.html")
 })
 
@@ -39,7 +39,7 @@ app.get("/panier.html", (req, res) => {
 
 app.get("/commande.html", (req, res) => {
   res.sendFile( __dirname + "/commande.html")
-})
+})*/
 
 
 

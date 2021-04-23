@@ -1,10 +1,11 @@
 {
   "name": "orinoco-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the back end server for Project 5 of the Junior Web Developer path.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +13,14 @@
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
     "uuid": "^3.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sandmox/P5-OC.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sandmox/P5-OC/issues"
+  },
+  "homepage": "https://github.com/Sandmox/P5-OC#readme"
 }
